@@ -1,0 +1,15 @@
+{
+  "name": "lab_crud_backend",
+  "version": "1.0.0",
+  "description": "backend pedagogico_crud_autenticacion_roles",
+  "keywords": [
+    "backend"
+  ],
+  "license": "ISC",
+  "author": "Dylan mejia oliveros",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
