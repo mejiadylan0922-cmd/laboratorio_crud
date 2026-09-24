@@ -1,6 +1,6 @@
 require('dotenv').config();
 
-const requiredEnvVars = ['DB_HOST','DB_USER','DB_NAME','JWT_SECRET'];
+const required = ['DB_HOST','DB_USER','DB_NAME','JWT_SECRET'];
 
 for (const name of required){
     if (!process.env[name]) {
@@ -20,5 +20,11 @@ module.exports = {
     jwt: {
         secret: process.env.JWT_SECRET,
         expiresIn: process.env.JWT_EXPIRES_IN || '2h',
+    },
+
+    admin: {
+        name: process.env.ADMIN_NAME,
+        email: process.env.ADMIN_EMAIL,
+        password: process.env.ADMIN_PASSWORD
     }
 };

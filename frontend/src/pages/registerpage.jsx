@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { AlertCircle, Eye, EyeOff, Lock, UserPlus } from 'lucide-react';
-import { register } from '../services/auth.service';
+import { register } from '../services/authservice';
 
 export default function RegisterPage() {
 const navigate = useNavigate();

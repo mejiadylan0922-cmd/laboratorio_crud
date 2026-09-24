@@ -5,6 +5,9 @@ CHARACTER SET utf8mb4
 COLLATE utf8mb4_unicode_ci;
 USE laboratorio_crud;
 
+drop table if EXISTS equipos;
+drop table if EXISTS usuarios;
+
 CREATE TABLE usuarios (
     id_usuario INT AUTO_INCREMENT PRIMARY KEY,
     nombre VARCHAR(100) NOT NULL,
